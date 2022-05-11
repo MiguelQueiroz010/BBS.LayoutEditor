@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF15F7FE-0E6C-4D64-8E28-44AF92D7AC71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BBS.LayoutEditor</RootNamespace>
+    <AssemblyName>BBS.LayoutEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Users\Raiden\Desktop\oUTbbsl2d\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sem título-1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\DXT\DxtDecoder.cs" />
+    <Compile Include="Forms\Atalhos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Atalhos.designer.cs">
+      <DependentUpon>Atalhos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageWindow.Designer.cs">
+      <DependentUpon>ImageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ImgLib\Common\BinaryReaderExtensions.cs" />
+    <Compile Include="Classes\ImgLib\Common\Endianness.cs" />
+    <Compile Include="Classes\ImgLib\Common\GenericDictionary.cs" />
+    <Compile Include="Classes\ImgLib\Common\ImageExtensions.cs" />
+    <Compile Include="Classes\ImgLib\Common\ImageUtils.cs" />
+    <Compile Include="Classes\ImgLib\Common\InteropUtils.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ColorCodec.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ColorCodecEndiannessDependent.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ColorComparers\ARGBColorComparer.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ImageDecoder.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ImageDecoderDirectColor.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ImageDecoderIndexed.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ImageEncoder.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ImageEncoderDirectColor.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\ImageEncoderIndexed.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodec16BitLEABGR.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodec24BitRGB.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodec32BitABGR.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodec32BitARGB.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodec32BitBGRA.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodec32BitRGBA.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodecDXT1.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodecDXT1Gamecube.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodecI4.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodecI8.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodecIA4.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodecIA8.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodecRGB565.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\ColorCodecRGB5A3.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\IndexCodec4Bpp.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\Implementation\IndexCodec8Bpp.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\IndexCodec.cs" />
+    <Compile Include="Classes\ImgLib\Encoding\IndexCodecEndiannessDependent.cs" />
+    <Compile Include="Classes\ImgLib\Filters\Filter.cs" />
+    <Compile Include="Classes\ImgLib\Filters\FilterComposer.cs" />
+    <Compile Include="Classes\ImgLib\Filters\GamecubePlanarFilter.cs" />
+    <Compile Include="Classes\ImgLib\Filters\SwizzleFilter.cs" />
+    <Compile Include="Classes\ImgLib\Filters\TileFilter.cs" />
+    <Compile Include="Classes\ImgLib\Filters\TIM2PaletteFilter.cs" />
+    <Compile Include="Classes\ImgLib\Formats\DummyTexture.cs" />
+    <Compile Include="Classes\ImgLib\Formats\GenericTextureFormat.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\NamcoTexture.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\NamcoTexture.Serializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\NUTTexture.Serializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\PE3DATTexture.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\PE3DATTexture.Serializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\PE3SimpleDATTexture.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\PE3SimpleDATTexture.Serializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TacticsOgreEFXTexture.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TacticsOgreEFXTexture.Serializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TIM2Texture.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TIM2Texture.Segment.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TIM2Texture.Serializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TPLTexture.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TPLTexture.Serializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TX48Texture.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Implementation\TX48Texture.Serializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\PalettedTextureFormat.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\Exceptions\MetadataException.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\Metadata\MetadataReader.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\Metadata\MetadataReaderBase.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\Metadata\MetadataWriter.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\Metadata\MetadataWriterBase.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\Metadata\XmlMetadataReader.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\Metadata\XmlMetadataWriter.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\SimpleTextureFormatSerializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\TextureFormatSerializer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\Serialization\TextureFormatSerializerProvider.cs" />
+    <Compile Include="Classes\ImgLib\Formats\TextureContainer.cs" />
+    <Compile Include="Classes\ImgLib\Formats\TextureFormat.cs" />
+    <Compile Include="Classes\ImgLib\Formats\TextureFormatBase.cs" />
+    <Compile Include="Classes\IOextent.cs" />
+    <Compile Include="Classes\L2D.cs" />
+    <Compile Include="Controles\L2DPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\L2DPage.Designer.cs">
+      <DependentUpon>L2DPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Screen.Designer.cs">
+      <DependentUpon>Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\SelectionRectangle.cs" />
+    <Compile Include="Forms\Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sobre.designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Texture.cs" />
+    <EmbeddedResource Include="Forms\Atalhos.resx">
+      <DependentUpon>Atalhos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageWindow.resx">
+      <DependentUpon>ImageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\L2DPage.resx">
+      <DependentUpon>L2DPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Screen.resx">
+      <DependentUpon>Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\L2DPage.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plant-variant-with-circular-leaves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1266280641-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2DeditorBACK.png" />
+    <Content Include="sem título-1.ico" />
+    <None Include="Resources\unnamed.jpg" />
+    <None Include="Resources\tenor.gif" />
+    <None Include="Resources\istockphoto-905186144-170667a.jpg" />
+    <None Include="Resources\455-4550934_kingdom-hearts-birth-by-sleep-final-mix-logo.png" />
+    <Content Include="1200px-kingdom_hearts_logo.svg.ico" />
+    <None Include="Resources\1200px-Kingdom_Hearts_logo.svg.png" />
+    <Content Include="Resources\png-transparent-white-grid-vector-grid-vector-table-square-grid-thumbnail.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
