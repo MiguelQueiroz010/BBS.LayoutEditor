@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections;
 using System.Linq;
 using System.Drawing;
 using System.IO;
 using System.Text;
-using System.Windows.Forms;
 
-using static IOextent;
 using Dxt;
 using Rainbow.ImgLib.Encoding;
 

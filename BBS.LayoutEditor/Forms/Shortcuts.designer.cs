@@ -77,15 +77,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(253, 206);
             this.tableLayoutPanel1.TabIndex = 7;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(46, 172);
+            this.label9.Location = new System.Drawing.Point(47, 172);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(160, 16);
+            this.label9.Size = new System.Drawing.Size(159, 16);
             this.label9.TabIndex = 14;
             this.label9.Text = "Save all: CTRL+SHIFT+S";
             // 
@@ -96,7 +97,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(67, 153);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 16);
+            this.label8.Size = new System.Drawing.Size(118, 16);
             this.label8.TabIndex = 13;
             this.label8.Text = "Save as: SHIFT+S";
             // 
@@ -107,7 +108,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(78, 133);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 16);
+            this.label7.Size = new System.Drawing.Size(96, 16);
             this.label7.TabIndex = 12;
             this.label7.Text = "Save: CTRL+S";
             // 
@@ -116,9 +117,9 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(67, 72);
+            this.label3.Location = new System.Drawing.Point(68, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 16);
+            this.label3.Size = new System.Drawing.Size(117, 16);
             this.label3.TabIndex = 9;
             this.label3.Text = "Close all: CTRL+Q";
             // 
@@ -127,9 +128,9 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(74, 51);
+            this.label2.Location = new System.Drawing.Point(75, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 16);
+            this.label2.Size = new System.Drawing.Size(103, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Close: CTRL+W";
             // 
@@ -140,7 +141,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(82, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 16);
+            this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 7;
             this.label1.Text = "Open L2D: F2";
             // 
@@ -154,7 +155,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(247, 18);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Shorcuts:";
+            this.label6.Text = "Shortcuts:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Atalhos

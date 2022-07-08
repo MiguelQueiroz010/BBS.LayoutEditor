@@ -63,9 +63,9 @@ namespace BBS.LayoutEditor
             this.label1.ForeColor = System.Drawing.Color.Azure;
             this.label1.Location = new System.Drawing.Point(117, 118);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 16);
+            this.label1.Size = new System.Drawing.Size(155, 16);
             this.label1.TabIndex = 2;
-            this.label1.Text = "RomHacker e DEV";
+            this.label1.Text = "RomHacker and DEV";
             // 
             // label2
             // 
@@ -108,7 +108,7 @@ namespace BBS.LayoutEditor
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(98, 19);
+            this.label4.Location = new System.Drawing.Point(227, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(249, 25);
             this.label4.TabIndex = 7;
@@ -117,7 +117,7 @@ namespace BBS.LayoutEditor
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(16, 0);
+            this.linkLabel2.Location = new System.Drawing.Point(279, 0);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(100, 13);
             this.linkLabel2.TabIndex = 8;
@@ -128,12 +128,12 @@ namespace BBS.LayoutEditor
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(59, 13);
+            this.linkLabel3.Location = new System.Drawing.Point(213, 0);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(57, 13);
+            this.linkLabel3.Size = new System.Drawing.Size(60, 13);
             this.linkLabel3.TabIndex = 9;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Use Guide";
+            this.linkLabel3.Text = "User Guide";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.doclink);
             // 
             // label5
@@ -155,7 +155,7 @@ namespace BBS.LayoutEditor
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 27);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(121, 101);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(384, 101);
             this.flowLayoutPanel1.TabIndex = 11;
             // 
             // tableLayoutPanel1
@@ -163,44 +163,45 @@ namespace BBS.LayoutEditor
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(261, 63);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(287, 63);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 107F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(131, 133);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(394, 133);
             this.tableLayoutPanel1.TabIndex = 12;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(20, 261);
+            this.label6.Location = new System.Drawing.Point(193, 261);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(345, 15);
+            this.label6.Size = new System.Drawing.Size(416, 15);
             this.label6.TabIndex = 13;
-            this.label6.Text = "So whether you eat or drink or whatever you do, do it all for the ";
+            this.label6.Text = "So whether you eat or drink or whatever you do, do it all for the glory of God. ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(97, 276);
+            this.label7.Location = new System.Drawing.Point(336, 276);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 15);
+            this.label7.Size = new System.Drawing.Size(113, 15);
             this.label7.TabIndex = 14;
-            this.label7.Text = "glory of God.  1 Corinthians 10:31";
+            this.label7.Text = "1 Corinthians 10:31";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BBS.LayoutEditor.Properties.Resources._1200px_Kingdom_Hearts_logo_svg;
-            this.pictureBox4.Location = new System.Drawing.Point(23, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(97, 9);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(45, 48);
+            this.pictureBox4.Size = new System.Drawing.Size(75, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
@@ -218,7 +219,7 @@ namespace BBS.LayoutEditor
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = global::BBS.LayoutEditor.Properties.Resources.tenor;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 63);
+            this.pictureBox2.Location = new System.Drawing.Point(8, 63);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(268, 133);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,7 +231,7 @@ namespace BBS.LayoutEditor
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(284, 44);
+            this.label8.Location = new System.Drawing.Point(320, 44);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 13);
             this.label8.TabIndex = 15;
@@ -241,7 +242,7 @@ namespace BBS.LayoutEditor
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(25, 214);
+            this.label9.Location = new System.Drawing.Point(217, 214);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(329, 15);
             this.label9.TabIndex = 16;
@@ -252,26 +253,26 @@ namespace BBS.LayoutEditor
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(130, 229);
+            this.label10.Location = new System.Drawing.Point(336, 229);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 15);
+            this.label10.Size = new System.Drawing.Size(119, 15);
             this.label10.TabIndex = 17;
-            this.label10.Text = "do not comercialize.";
+            this.label10.Text = "Do not comercialize.";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label11.Location = new System.Drawing.Point(5, 199);
+            this.label11.Location = new System.Drawing.Point(178, 199);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(387, 15);
+            this.label11.Size = new System.Drawing.Size(431, 15);
             this.label11.TabIndex = 18;
-            this.label11.Text = "By SoraLeon and Gledson999 and me, BBS Translation Project to BR.";
+            this.label11.Text = "By SoraLeon, Gledson999 , Wolf3s and me, BBS Translation Project to PT-BR.";
             // 
             // Sobre
             // 
-            this.ClientSize = new System.Drawing.Size(390, 297);
+            this.ClientSize = new System.Drawing.Size(693, 297);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);

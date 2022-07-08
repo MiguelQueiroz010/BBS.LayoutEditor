@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
 using System.IO;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace BBS.LayoutEditor
@@ -24,6 +18,7 @@ namespace BBS.LayoutEditor
     partial class Sobre : Form
     {
         string raidengithub = "https://github.com/MiguelQueiroz010";
+
         public Sobre()
         {
             InitializeComponent();
@@ -58,7 +53,13 @@ namespace BBS.LayoutEditor
 
         private void doclink(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           Process.Start("Guia.txt");
+           //Todo:
+           //Process.Start("Guia.txt");
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
