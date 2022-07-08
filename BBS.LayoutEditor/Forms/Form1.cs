@@ -52,7 +52,7 @@ namespace BBS.LayoutEditor
             {
                 var op = new OpenFileDialog();
                 op.Filter = "Layout2Dimensional(*.l2d)|*.l2d";
-                op.Title = "Open válid(s) file(s) L2D Birth by Sleep.";
+                op.Title = "Open valid(s) file(s) L2D Birth by Sleep.";
                 op.Multiselect = true;
                 if (op.ShowDialog() == DialogResult.OK)
                 {
@@ -67,7 +67,7 @@ namespace BBS.LayoutEditor
                     var fail = new OpenFileDialog();
                     if(fail.ShowDialog() == DialogResult.Abort) 
                     {
-                        MessageBox.Show("This isn´t a correct file aborting");
+                        MessageBox.Show("This isn´t a valid .l2d file");
                     }
                 }
             }

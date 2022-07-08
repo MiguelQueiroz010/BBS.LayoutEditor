@@ -5,7 +5,6 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 
-using static IOextent;
 using Dxt;
 using Rainbow.ImgLib.Encoding;
 

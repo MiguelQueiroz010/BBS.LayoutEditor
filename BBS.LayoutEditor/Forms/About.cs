@@ -18,7 +18,7 @@ namespace BBS.LayoutEditor
     partial class Sobre : Form
     {
         string raidengithub = "https://github.com/MiguelQueiroz010";
-        string Wolf3sgithub = "https://github.com/wolfysdl";
+
         public Sobre()
         {
             InitializeComponent();

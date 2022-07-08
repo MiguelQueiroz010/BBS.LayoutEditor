@@ -63,7 +63,7 @@ namespace BBS.LayoutEditor
             this.label1.ForeColor = System.Drawing.Color.Azure;
             this.label1.Location = new System.Drawing.Point(117, 118);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 16);
+            this.label1.Size = new System.Drawing.Size(155, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "RomHacker and DEV";
             // 
@@ -199,9 +199,9 @@ namespace BBS.LayoutEditor
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BBS.LayoutEditor.Properties.Resources._1200px_Kingdom_Hearts_logo_svg;
-            this.pictureBox4.Location = new System.Drawing.Point(100, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(97, 9);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(45, 48);
+            this.pictureBox4.Size = new System.Drawing.Size(75, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
@@ -255,9 +255,9 @@ namespace BBS.LayoutEditor
             this.label10.ForeColor = System.Drawing.Color.Red;
             this.label10.Location = new System.Drawing.Point(336, 229);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 15);
+            this.label10.Size = new System.Drawing.Size(119, 15);
             this.label10.TabIndex = 17;
-            this.label10.Text = "do not comercialize.";
+            this.label10.Text = "Do not comercialize.";
             // 
             // label11
             // 
