@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace BBS.LayoutEditor
@@ -24,14 +19,14 @@ namespace BBS.LayoutEditor
     {
         private enum PosSizRect
         {
-            Norte,
-            Sul,
-            Leste,
-            Oeste,
-            Nordeste,
-            Sudeste,
-            Noroeste,
-            Sudoeste,
+            North,
+            South,
+            East,
+            West,
+            Northeast,
+            Southeast,
+            Northwest,
+            Southwest,
             Move
         };
 
@@ -88,6 +83,12 @@ namespace BBS.LayoutEditor
         {
             Selected = null;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void DrawImageWindow(Image image, string bpp, int colors, SP2.Part part, int zoomOut = 1)
         {
             original = image;
@@ -131,38 +132,38 @@ namespace BBS.LayoutEditor
                 {
                     switch (posRect)
                     {
-                        case PosSizRect.Norte:
+                        case PosSizRect.North:
                             Selected.Bounds.Y += e.Y - MouseLastPoint.Y;
                             Selected.BoundSize.Height -= e.Y - MouseLastPoint.Y;
                             break;
-                        case PosSizRect.Sul:
+                        case PosSizRect.South:
                             Selected.BoundSize.Height += e.Y - MouseLastPoint.Y;
                             break;
-                        case PosSizRect.Leste:
+                        case PosSizRect.East:
                             Selected.BoundSize.Width += e.X - MouseLastPoint.X;
                             break;
-                        case PosSizRect.Oeste:
+                        case PosSizRect.West:
                             Selected.Bounds.X += e.X - MouseLastPoint.X;
                             Selected.BoundSize.Width -= e.X - MouseLastPoint.X;
                             break;
 
-                        case PosSizRect.Nordeste:
+                        case PosSizRect.Northeast:
                             Selected.Bounds.X += e.X - MouseLastPoint.X;
                             Selected.Bounds.Y += e.Y - MouseLastPoint.Y;
                             Selected.BoundSize.Width -= e.X - MouseLastPoint.X;
                             Selected.BoundSize.Height -= e.Y - MouseLastPoint.Y;
                             break;
-                        case PosSizRect.Sudeste:
+                        case PosSizRect.Southeast:
                             Selected.BoundSize.Width -= e.X - MouseLastPoint.X;
                             Selected.Bounds.X += e.X - MouseLastPoint.X;
                             Selected.BoundSize.Height += e.Y - MouseLastPoint.Y;
                             break;
-                        case PosSizRect.Noroeste:
+                        case PosSizRect.Northwest:
                             Selected.Bounds.Y += e.Y - MouseLastPoint.Y;
                             Selected.BoundSize.Width += e.X - MouseLastPoint.X;
                             Selected.BoundSize.Height -= e.Y - MouseLastPoint.Y;
                             break;
-                        case PosSizRect.Sudoeste:
+                        case PosSizRect.Southwest:
                             Selected.BoundSize.Width += e.X - MouseLastPoint.X;
                             Selected.BoundSize.Height += e.Y - MouseLastPoint.Y;
                             break;
@@ -220,11 +221,11 @@ namespace BBS.LayoutEditor
                     {
                         if (RectangleTools.IsMouseOn(Selection.Norte, pictureBox1))
                         {
-                            posRect = PosSizRect.Norte;
+                            posRect = PosSizRect.North;
                         }
                         else
                         {
-                            posRect = PosSizRect.Sul;
+                            posRect = PosSizRect.South;
                         }
                     }
                 }
@@ -238,11 +239,12 @@ namespace BBS.LayoutEditor
                     {
                         if (RectangleTools.IsMouseOn(Selection.Leste, pictureBox1))
                         {
-                            posRect = PosSizRect.Leste;
+                            posRect = PosSizRect.East;
                         }
+                        
                         else
                         {
-                            posRect = PosSizRect.Oeste;
+                            posRect = PosSizRect.West;
                         }
                     }
                 }
@@ -256,11 +258,11 @@ namespace BBS.LayoutEditor
                     {
                         if (RectangleTools.IsMouseOn(Selection.Sudeste, pictureBox1))
                         {
-                            posRect = PosSizRect.Sudeste;
+                            posRect = PosSizRect.Southwest;
                         }
                         else
                         {
-                            posRect = PosSizRect.Noroeste;
+                            posRect = PosSizRect.Northwest;
                         }
                     }
                 }
@@ -274,11 +276,12 @@ namespace BBS.LayoutEditor
                     {
                         if (RectangleTools.IsMouseOn(Selection.Nordeste, pictureBox1))
                         {
-                            posRect = PosSizRect.Nordeste;
+                            posRect = PosSizRect.Northeast;
                         }
+                        
                         else
                         {
-                            posRect = PosSizRect.Sudoeste;
+                            posRect = PosSizRect.Southeast;
                         }
                     }
                 }

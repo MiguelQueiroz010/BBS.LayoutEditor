@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+//using System.ComponentModel;
+//using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.IO;
-using System.Text;
+//using System.Text;
 using System.Windows.Forms;
 
 //EN-US
@@ -52,7 +52,7 @@ namespace BBS.LayoutEditor
             {
                 var op = new OpenFileDialog();
                 op.Filter = "Layout2Dimensional(*.l2d)|*.l2d";
-                op.Title = "Abra um(ns) arquivo(s) L2D Birth by Sleep válido(s).";
+                op.Title = "Open válid(s) file(s) L2D Birth by Sleep.";
                 op.Multiselect = true;
                 if (op.ShowDialog() == DialogResult.OK)
                 {
@@ -61,6 +61,14 @@ namespace BBS.LayoutEditor
                         tabControl1.TabPages.Add(new L2DPage(this, new L2D(File.ReadAllBytes(file)), file));
                     }
                     UpdateOptions();
+                }
+                else 
+                {
+                    var fail = new OpenFileDialog();
+                    if(fail.ShowDialog() == DialogResult.Abort) 
+                    {
+                        MessageBox.Show("This isn´t a correct file aborting");
+                    }
                 }
             }
         }
@@ -549,6 +557,11 @@ namespace BBS.LayoutEditor
             }
         }
         #endregion
+
+        private void opçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void modoColoridoToolStripMenuItem_Click(object sender, EventArgs e)
         {

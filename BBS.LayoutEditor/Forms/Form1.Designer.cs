@@ -181,7 +181,7 @@ namespace BBS.LayoutEditor
             // 
             this.exportarXMLToolStripMenuItem.Enabled = false;
             this.exportarXMLToolStripMenuItem.Name = "exportarXMLToolStripMenuItem";
-            this.exportarXMLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportarXMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exportarXMLToolStripMenuItem.Text = "Export XML";
             this.exportarXMLToolStripMenuItem.Visible = false;
             // 
@@ -189,7 +189,7 @@ namespace BBS.LayoutEditor
             // 
             this.importarXMLToolStripMenuItem.Enabled = false;
             this.importarXMLToolStripMenuItem.Name = "importarXMLToolStripMenuItem";
-            this.importarXMLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importarXMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.importarXMLToolStripMenuItem.Text = "Import XML";
             this.importarXMLToolStripMenuItem.Visible = false;
             // 
@@ -197,7 +197,7 @@ namespace BBS.LayoutEditor
             // 
             this.exportarRecorteToolStripMenuItem.Enabled = false;
             this.exportarRecorteToolStripMenuItem.Name = "exportarRecorteToolStripMenuItem";
-            this.exportarRecorteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportarRecorteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exportarRecorteToolStripMenuItem.Text = "Export UV Part";
             this.exportarRecorteToolStripMenuItem.Click += new System.EventHandler(this.exportarRecorteToolStripMenuItem_Click);
             // 
@@ -205,7 +205,7 @@ namespace BBS.LayoutEditor
             // 
             this.importarRecorteToolStripMenuItem.Enabled = false;
             this.importarRecorteToolStripMenuItem.Name = "importarRecorteToolStripMenuItem";
-            this.importarRecorteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importarRecorteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.importarRecorteToolStripMenuItem.Text = "Import UV Part";
             // 
             // lY2ToolStripMenuItem
@@ -213,7 +213,7 @@ namespace BBS.LayoutEditor
             this.lY2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editarFontRenderToolStripMenuItem});
             this.lY2ToolStripMenuItem.Name = "lY2ToolStripMenuItem";
-            this.lY2ToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.lY2ToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.lY2ToolStripMenuItem.Text = "LY2";
             this.lY2ToolStripMenuItem.Visible = false;
             // 
@@ -284,6 +284,7 @@ namespace BBS.LayoutEditor
             this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
             this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.opçõesToolStripMenuItem.Text = "Options";
+            this.opçõesToolStripMenuItem.Click += new System.EventHandler(this.opçõesToolStripMenuItem_Click);
             // 
             // modoColoridoToolStripMenuItem
             // 
